@@ -8,7 +8,7 @@
 
 const { Contract } = require('fabric-contract-api');
 
-class FabCar extends Contract {
+class Transaction extends Contract {
 //function of initLedger, it ensures that you chaincode is properly installed and we are using this function as initialization while running
 //ctx -> context is needed as a first parameter on all the functions
 async initLedger(ctx){
@@ -40,4 +40,4 @@ async initLedger(ctx){
     
     
     
-    module.exports = FabCar;
+    module.exports = Transaction;
